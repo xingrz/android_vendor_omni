@@ -296,7 +296,7 @@ endif
 ccache =
 
 ifeq ($(HOST_OS),darwin)
-  MAKE_FLAGS += C_INCLUDE_PATH=./external/elfutils/libelf:/usr/local/opt/openssl/include
+  MAKE_FLAGS += C_INCLUDE_PATH=$(BUILD_TOP)/external/elfutils/libelf:/usr/local/opt/openssl/include
   MAKE_FLAGS += LIBRARY_PATH=/usr/local/opt/openssl/lib
 endif
 
